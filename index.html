@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuscany Stone | Opere in Pietra</title>
+    <meta name="description"
+        content="Tuscany Stone è un luogo dove la pietra racconta storie. Oggetti unici che raccontano storie di memoria, natura e resistenza.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">Tuscany Stone</div>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#history">History</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="fade-in-up">Immagini scolpite nella pietra</h1>
+                <p class="fade-in-up delay-1">L'essenza della natura lavorata a mano.</p>
+                <a href="#portfolio" class="btn fade-in-up delay-2">Scopri le Opere</a>
+            </div>
+        </section>
+
+        <section id="about" class="section fade-in">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-num">01</span>
+                    <h2>About us</h2>
+                </div>
+                <div class="section-content text-large">
+                    <p>Tuscany Stone è un luogo dove la pietra racconta storie, dove il passato si fonde con il presente
+                        e dove ogni creazione porta con sé il peso e la bellezza della memoria.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="section bg-light text-center fade-in">
+            <div class="container">
+                <div class="section-header center">
+                    <span class="section-num">02</span>
+                    <h2>Portfolio</h2>
+                </div>
+
+                <!-- Grid contenitore delle opere -->
+                <div class="portfolio-grid" id="portfolio-grid">
+                    <!-- Cards verranno iniettate da JS -->
+                </div>
+            </div>
+        </section>
+
+        <section id="history" class="section fade-in">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-num">03</span>
+                    <h2>History</h2>
+                </div>
+                <div class="section-content">
+                    <p>Questo progetto è nato durante una camminata dal ricordo di un caro amico scomparso troppo
+                        presto.
+                        Uno dei due amici, appassionato da sempre della lavorazione manuale della pietra, ha unito il
+                        desiderio di ricordarlo con la sua grande passione. Così, passo dopo passo, l’idea si è
+                        trasformata in un progetto dove pietre dimenticate prendono vita diventando oggetti unici che
+                        raccontano storie di memoria, natura e resistenza.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Tuscany Stone. Tutti i diritti riservati.</p>
+        </div>
+    </footer>
+
+    <!-- Modal Lightbox per i dettagli dell'opera -->
+    <div id="artwork-modal" class="modal">
+        <span class="modal-close" id="modal-close">&times;</span>
+        <div class="modal-content">
+            <div class="modal-image-container">
+                <img id="modal-image" src="" alt="Artwork">
+            </div>
+            <div class="modal-info">
+                <h3 id="modal-title" class="modal-title"></h3>
+                <p id="modal-material" class="modal-meta"></p>
+                <div id="modal-description" class="modal-desc"></div>
+                <div class="modal-actions">
+                    <button id="btn-share" class="btn btn-outline">
+                        <svg style="width:16px;height:16px;margin-right:8px;vertical-align:middle" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <circle cx="18" cy="5" r="3"></circle>
+                            <circle cx="6" cy="12" r="3"></circle>
+                            <circle cx="18" cy="19" r="3"></circle>
+                            <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+                            <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+                        </svg>
+                        Condividi
+                    </button>
+                    <!-- Link per WhatsApp fallback (opzionale, si può aggiungere logicamente dopo) -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

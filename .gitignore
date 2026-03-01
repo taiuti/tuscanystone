@@ -1,0 +1,15 @@
+# Documentazione di sistema
+.gemini/
+.agents/
+.agent/
+_agents/
+_agent/
+brain/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporanei
+tmp/
+*.log
